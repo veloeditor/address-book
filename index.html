@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>User Input Data</title>
+  <link rel="stylesheet" href="./styles/address.css">
+
+</head>
+
+<body>
+  <div id="form">
+    <fieldset>
+      <label for="favThing">Favorite Thing</label>
+      <input type="text" id="fullName" placeholder="Enter my favorite thing" value="" autofocus />
+    </fieldset>
+    <fieldset>
+      <label for="address">Store</label>
+      <input type="text" id="address" placeholder="Where I can buy it" />
+    </fieldset>
+
+    <button id="saveEntry" onclick="getfocus()">Save to Wishlist</button>
+
+  </div>
+  <article id="wishlist"> </article>
+
+  <script>
+      function getfocus() {
+        document.getElementById("fullName").focus();
+      }
+      
+      </script>
+  <script src="./scripts/address.js"></script>
+</body>
+
+</html>
